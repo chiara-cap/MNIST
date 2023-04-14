@@ -113,9 +113,6 @@ def train_one_epoch(epoch_index):
 
             avg_vloss = running_vloss / (i + 1)
             print('LOSS train {} valid {}'.format(last_loss, avg_vloss))
-            
-        input = input.cpu()
-        labels = labels.cpu()
 
     return last_loss
 
